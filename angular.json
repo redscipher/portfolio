@@ -39,7 +39,8 @@
             "outputMode": "server",
             "ssr": {
               "entry": "src/server.ts"
-            }
+            },
+            "sourceMap": true
           },
           "configurations": {
             "production": {
@@ -103,5 +104,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "83f40aca-c136-4dae-a034-3283c77b352d"
   }
 }
