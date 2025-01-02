@@ -2,7 +2,7 @@
 export const usuarioGit: string = 'redscipher';
 
 //classes
-export class GitHubRepo {
+export class GitHub {
   //propriedades
   name: string;
   description: string;

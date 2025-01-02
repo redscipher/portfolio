@@ -1,7 +1,7 @@
 <header>
     <div class="container mx-auto py-8 text-center">
       <!-- aplica animacao -->
-      <div class="animacao-des-surgindo">
+      <div *ngIf="perfil" class="animacao-des-surgindo">
         <!-- informacoes do github -->
         <div>   <!-- size-28 ==> w/h-28: tamanho de 128px/7rem -->
           <img [src]="perfil.avatar_url" class="size-28 rounded-full mx-auto mb-6 border-4" alt="Foto de perfil">
