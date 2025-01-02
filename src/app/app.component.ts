@@ -1,5 +1,5 @@
 //importacoes
-import { Component, Injectable, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 
 // componentes
