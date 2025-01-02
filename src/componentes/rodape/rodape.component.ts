@@ -7,5 +7,15 @@ import { Component } from "@angular/core";
   styleUrls: ['./rodape.component.scss']
 })
 export class RodapeComponent {
+  //
+  //#region propriedades
+  //
+  anoVigente: number;
+  //
+  //#endregion propriedades
 
+  constructor() {
+    this.anoVigente = new Date().getFullYear();
+  }
+  //
 }

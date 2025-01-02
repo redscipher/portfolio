@@ -3,15 +3,17 @@
       <!-- aplica animacao -->
       <div *ngIf="perfil" class="animacao-des-surgindo">
         <!-- informacoes do github -->
-        <div>   <!-- size-28 ==> w/h-28: tamanho de 128px/7rem -->
-          <img [src]="perfil.avatar_url" class="size-28 rounded-full mx-auto mb-6 border-4" alt="Foto de perfil">
-          <h1 class="text-2xl font-bold mb-4">
-            {{perfil.name}}
-          </h1>
+        <div class="flex justify-center items-center py-8">   <!-- size-28 ==> w/h-28: tamanho de 128px/7rem -->
+          <img [src]="perfil.avatar_url" class="size-28 rounded-full mx-auto border-4" alt="Foto de perfil">
+          <div>
+            <h1 class="text-2xl font-bold mb-4">
+              {{perfil.name}}
+            </h1>
+            <p class="text-lg text-gray-400 mb-6">
+              {{perfil.bio}} este é a bio
+            </p>
+          </div>
         </div>
-        <p class="text-lg text-gray-400 mb-6">
-          {{perfil.bio}} este é a bio
-        </p>
         <!-- links -->
         <div class="flex justify-center gap-4">
           <a [href]="perfil.html_url" class="bg-blue-600 hover:bg-blue-700 px-6 py-2 rounded-full transition duration-300">

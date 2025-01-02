@@ -1,0 +1,18 @@
+//resete
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+//elementos: nivel 1
+main {
+  flex: 1;    //faz o 'main' ocupar todo espaco disponivel
+}
+
+//classes
+.container {
+  max-width: 1366px;
+  width: 100%;
+  margin: 0 auto;
+}

@@ -6,11 +6,12 @@ import { RouterOutlet } from '@angular/router';
 import { CabecalhoComponent } from '../componentes/cabecalho/cabecalho.component';
 import { GitHub, usuarioGit } from '../globais';
 import { DadosGitService } from '../servicos/github/dados-git.service';
+import { RodapeComponent } from '../componentes/rodape/rodape.component';
 
 //componente principal
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, CabecalhoComponent],
+  imports: [RouterOutlet, CabecalhoComponent, RodapeComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
