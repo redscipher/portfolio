@@ -4,7 +4,6 @@ import { RouterOutlet } from '@angular/router';
 
 // componentes
 import { CabecalhoComponent } from '../componentes/cabecalho/cabecalho.component';
-import { RodapeComponent } from '../componentes/rodape/rodape.component';
 
 //componente principal
 @Component({

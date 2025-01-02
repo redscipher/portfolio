@@ -1,0 +1,18 @@
+// classes
+.animacao-des-surgindo {
+  animation: efeitoDesSurge 1s ease-in-out;   //aplica animacao criada na clase
+}
+
+// animacoes
+@keyframes efeitoDesSurge {
+  //de: comeco
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  //para: fim
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
