@@ -1,36 +1,12 @@
-import { Component, OnInit } from '@angular/core';
-//------------------------
-import { GitHub } from '../../globais';
-import { DadosGitService } from '../../servicos/github/dados-git.service';
-import { CommonModule } from '@angular/common';
+import { Component } from '@angular/core';
+import { BotaoBolhaComponent } from '../botao-bolha/botao-bolha.component';
 
 @Component({
   selector: 'app-cabecalho',
-  imports: [CommonModule],
+  imports: [BotaoBolhaComponent],
   templateUrl: './cabecalho.component.html',
-  styleUrl: './cabecalho.component.scss'
+  styleUrls: ['./cabecalho.component.scss', '../../_globais.scss']
 })
-export class CabecalhoComponent implements OnInit {
-  //
-  //#region propriedades
-  //
-    perfil: GitHub;
-  //
-  //#endregion propriedades
+export class CabecalhoComponent {
 
-  //propriedades no construtor: perfilServico
-  constructor(private perfilServico: DadosGitService) {
-    this.perfil = new GitHub();
-  }
-
-  //#region eventos
-  //
-    ngOnInit(): void {
-      this.perfilServico.getPerfil().subscribe(perfil => {
-        this.perfil = perfil;
-      });
-    }
-  //
-  //#endregion eventos
-  //
 }

@@ -1,23 +1,48 @@
-//elementos
-img {
-  margin: 0 32px 8px 0;
+//importacoes
+@use '../../globais';
+
+//elementos: nivel 1
+header {
+  background: linear-gradient(to right, black, rgb(28, 28, 28), rgb(39, 39, 39), rgb(89, 89, 89), rgb(77, 77, 77), gray);
+  box-shadow: 0 10px 100px rgb(80, 80, 80);
 }
 
-// classes
-.animacao-des-surgindo {
-  animation: efeitoDesSurge 1s ease-in-out;   //aplica animacao criada na clase
-}
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 8px;
+  //fontes
+  font-family: "Goudy Bookletter 1911", serif;
+  font-size: 22px;
 
-// animacoes
-@keyframes efeitoDesSurge {
-  //de: comeco
-  from {
-    opacity: 0;
-    transform: translateY(-10px);
+  li {
+    margin-right: 16px;
   }
-  //para: fim
-  to {
-    opacity: 1;
-    transform: translateY(0);
+}
+
+h1 {
+  font-family: "Montaga", serif;
+  font-weight: bold;
+}
+
+//classes: nivel 1
+.container-cab {
+  height: 12vh;
+  padding: 16px;
+  //visualizacao
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  justify-items: center;
+}
+
+//ids: nivel 1
+#id-icone {
+  display: flex;
+  padding: 8px;
+
+  //elementos: nivel 1
+  i {
+    margin-right: 8px;
   }
 }

@@ -1,0 +1,32 @@
+//variaveis
+$cor-cinza: #ccc;
+$cor-azul: #8fa5d9;
+$cor-branca: #fff;
+$cor-preto: #1a1a1a;
+
+//resete
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  //cores
+  color: $cor-cinza;
+  background-color: $cor-preto;
+}
+
+//elementos: nivel 1
+main {
+  flex: 1;    //faz o 'main' ocupar todo espaco disponivel
+}
+
+//classes
+.container {
+  max-width: 1366px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+//aplica regra p/ todas tags dentro dele "*"
+.fundo-transparente * {
+  background-color: transparent;
+}

@@ -1,0 +1,25 @@
+<div>
+  <!-- aplica animacao: size-28 ==> w/h-28: tamanho de 128px/7rem -->
+  @if (perfil) {
+    <div *ngIf="perfil" class="container mx-auto py-8 text-center justify-center items-center animacao-des-surgindo cls-perfil">
+      <!-- informacoes do github -->
+      <div id="id-img-desc">
+        <img [src]="perfil.avatar_url" class="size-28 rounded-full mx-auto border-4" alt="Foto de perfil">
+        <div>
+          <h1 class="text-2xl font-bold mb-4">
+            <i class="bi bi-github"></i> <strong> Usuario: </strong> {{perfil.name}}
+          </h1>
+          <p class="text-lg text-gray-400 mb-6">
+            <strong>Bio: </strong>{{perfil.bio}}
+          </p>
+        </div>
+      </div>
+      <!-- links -->
+      <div class="flex justify-center gap-4">
+        <a [href]="perfil.html_url" class="px-6 py-2 rounded-full transition duration-300">
+          GitHub
+        </a>
+      </div>
+    </div>
+  }
+</div>

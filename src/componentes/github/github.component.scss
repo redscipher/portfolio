@@ -1,0 +1,83 @@
+//importacoes
+@use '../../globais';
+
+//elementos
+img {
+  transition: all 0.3s ease;
+  // margens
+  margin: 0 32px 16px 0;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15),
+      0 0 20px rgba(8, 34, 75, 0.2);
+  }
+}
+
+h1 {
+  font-family: "Geist Mono", serif;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 18px;
+  // cores
+  color: globais.$cor-cinza;
+}
+
+p {
+  font-family: "Geist Mono", serif;
+  font-size: 16px;
+}
+
+a {
+  border: 2px solid globais.$cor-azul;
+  color: globais.$cor-azul;
+  width: 50%;
+}
+
+//ids
+#id-img-desc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// classes
+.animacao-des-surgindo {
+  animation: efeitoDesSurge 1s ease-in-out;   //aplica animacao criada na clase
+}
+
+.animacao-flutuando {
+  animation: flutuando 3s forwards;   //aplica animacao criada na clase
+}
+
+.cls-perfil {
+  width: 50%;
+}
+
+// animacoes
+@keyframes efeitoDesSurge {
+  //de: comeco
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  //para: fim
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+// animacoes
+@keyframes flutuando {
+  //de: comeco
+  from {
+    opacity: 0;
+    transform: translateY(1px);
+  }
+  //para: fim
+  to {
+    opacity: 1;
+    transform: translateY(300px);
+  }
+}
