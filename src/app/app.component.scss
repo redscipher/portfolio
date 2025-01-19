@@ -3,6 +3,10 @@ main {
   flex: 1;    //faz o 'main' ocupar todo espaco disponivel
 }
 
+section {
+  margin-top: 32px;
+}
+
 app-cabecalho {
   z-index: 1;
 }

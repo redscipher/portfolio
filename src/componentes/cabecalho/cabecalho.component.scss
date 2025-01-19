@@ -2,11 +2,6 @@
 @use '../../globais';
 
 //elementos: nivel 1
-header {
-  background: linear-gradient(to right, black, rgb(28, 28, 28), rgb(39, 39, 39), rgb(89, 89, 89), rgb(77, 77, 77), gray);
-  box-shadow: 0 10px 100px rgb(80, 80, 80);
-}
-
 ul {
   display: flex;
   flex-wrap: wrap;
